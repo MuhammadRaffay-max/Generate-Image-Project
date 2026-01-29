@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #07014a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 55px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    position: sticky;
+    
+}
+header .nav_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_bar ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+    padding-left: 350px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+nav ul li a:hover{
+    color: #99da93;
+    transition: .3s;
+}
+
+header .icons {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* icons ke darmiyan space */
+}
+
+.icons i {
+    font-size: 24px;      /* 👈 size barhane ke liye */
+    color: #fff;          /* 👈 icon ka color */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero{
+    padding-top: 50px;
+    height: 130vh;
+    width: 100%;
+    background: url(image/Rectangle_42613_f1c28ce2-1d94-45a6-bd48-a3511e2cc83d.webp);
+    background-size: cover;      /* image full area cover kare */
+    background-position: center; /* center se adjust */
+    background-repeat: no-repeat;
+}
+
+.hero h2{
+    font-size: 85px;
+    color: #fff;
+    line-height: normal;
+    font-weight: bold;
+    padding-left: 100px;
+    padding-top: 100px;
+
+}
+.hero h2 .sp{
+    color: #99da93;
+}
+
+.hero .btn{
+    padding-top: 50px;
+    padding-left: 116px;
+}
+.hero .btn .btn1{
+    padding: 18px 60px;
+    color: #fff;
+    border: 1px solid #3124c9;
+    border-radius: 20px;
+    background-color: #0b0455;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: bold;
+    cursor: pointer;
+}
+.hero .btn .btn1:hover{
+    background-color: #2319a0;
+    color: #fff;
+    transition: .5s;
+}
+
+.hero_icns{
+    padding-top: 50px;
+    padding-left: 130px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    box-sizing: border-box;
+}
+.hero_icns .ander{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.ander .hero_icn1 i{
+    /* background-color: transparent; */
+    border: 1px solid #343bf9;
+    padding: 20px 20px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+}
+
+.ander .hero_icntxt h3{
+    padding-top: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 24.4444px;
+    font-weight: bold;
+}
+.ander .hero_icntxt p{
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 28.8px;
+    Color: rgb(255, 255, 255);
+    font-weight: normal;
+}
+
+.hero_icns .ander2{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.ander2 .hero_icn2 i{
+    border: 1px solid #343bf9;
+    padding: 20px 20px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+}
+.ander2 .hero_icntxt h3{
+    padding-top: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 24.4444px;
+    font-weight: bold;
+}
+.ander2 .hero_icntxt p{
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 28.8px;
+    Color: rgb(255, 255, 255);
+    font-weight: normal;
+}
+
+.srch_cnt{
+    width: 100%;
+    background: #02070f;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.srch_cnt h3{
+    font-size: 40px;
+    line-height: 48.8889px;
+    font-weight: bold;
+    color: #2d2f32;
+    padding: 0 60px;
+    text-align: center;
+}
+.srch_cnt h3 span{
+    color: #99da93;
+}
+.srch_cnt img{
+    display: block;
+    margin: 30px auto 0; /* top space + center */
+}
+
+/* search bar */
+.search-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; /* page ke beech lane ke liye */
+}
+
+.search-box{
+    position: relative;
+    width: 900px;
+    border: 2px solid #191c20;
+    border-radius: 50px;
+}
+
+.search-box input{
+    width: 100%;
+    padding: 14px 160px 14px 20px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    border-radius: 50px;
+    background: #d9d9d9;
+    color: #464646;
+    border: 1px solid #9d9d9d;
+    outline: none;
+}
+
+.search-box button{
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    background: #0a0352;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: bold;
+    transition: .4s;
+}
+
+.search-box button:hover{
+    background: #22189e;
+}
+
+.tags{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.tags h5{
+    margin: 0;
+    font-size: 16px;
+    line-height: 28.8px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+}
+.tags button{
+    padding: 1px 25px;
+    border-radius: 20px;
+    border: 2px solid #717171;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 25.2px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+}
+
+.tags button:hover{
+    border-color: rgb(153, 218, 147);
+    color: rgb(153, 218, 147);
+    transform: translateY(4%);
+}
+
+
+
+
+
+
+.srch_cnt h4{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+}
+
+.ser{
+    padding-top: 200px;
+    width: 100%;
+    height: 400px;
+    background-color: #02070f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 65px 5px;
+    padding-bottom: 50px;
+}
+.for_ser{
+   padding-top: 80px;
+}
+
+
+.ser1 h3{
+    padding-top: 40px;
+    font-size: 24px;
+    line-height: 29.3333px;
+    font-weight: medium;
+    color: rgb(255, 255, 255);
+    
+    
+}
+.ser1 p{
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 28.8px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin: auto;
+}
+.feature-icon {
+    animation: rotateIcon 10s linear infinite;
+}
+
+@keyframes rotateIcon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* footer */
+
+.footer{
+   padding: 65px 65px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #02070f;
+    justify-content: space-between;
+}
+
+.footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+/* .footer .col .logo{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #fff;
+}
+.footer .col .logo span{
+    color: #9b87f5;
+} */
+
+/* .footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+} */
+
+.footer  p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    padding-top: 23px;
+    margin:  0 0 8px 0;
+    color: #e4e5e6;
+    padding-bottom: 14px;
+}
+.footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+
+    margin-bottom: 10px;
+}
+
+.footer .follow{
+    margin-top: 20px;
+}
+
+.follow .icon{
+    background: none;
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px;  
+
+}
+.follow .ik1{
+    border: 1px solid #464646;
+    align-items: center;
+    padding: 7px 7px;
+    border-radius: 50%;
+    gap: 13px;
+    box-shadow: 0 0 5px #464646; 
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.follow .ik1:hover{
+    transform: translateY(-5px);    /* icon upar move */
+    /* box-shadow: 0 5px 15px rgb(153, 218, 147); */
+    border: 1px solid rgb(153, 218, 147);
+    color: rgb(153, 218, 147);
+}
+
+.follow .icon .ali{
+    Color:rgb(248, 250, 252);
+    font-size: 25px;
+    line-height: 24px;
+
+}
+.ali2{
+    padding-left: 10px;
+}
+.ali3{
+    padding-left: 10px;
+}
+.ali4{
+    padding-left: 10px;
+}
+.ali5{
+    padding-left: 10px;
+}
+.copyright{
+    background: #02070f;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 30px;
+    color: rgb(156, 163, 175);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    
+}
+.copyright span{
+    color: rgb(153, 218, 147);
+}
+
+.footer .col h4{
+    font-size: 24px;
+    line-height: 29.7px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    
+    color: rgb(153, 218, 147);
+}
+.footer .col a{
+    margin-top: 6px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #e4e5e6;
+}
+.footer .col a:hover{
+    color: rgb(153, 218, 147);
+    transition: .3s;
+}
+
